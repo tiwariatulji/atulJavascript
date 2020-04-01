@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arry And Object</title>
+</head>
+<body>
+    <div class="container"></div>
+    <p id="demo"></p>
+    <script>
+
+     let newEmp ={
+         name:"Atul Tiwari",
+         company : " it services india",
+         salary: 60000
+     }                                 // java script object
+     console.log(newEmp);       // Add pbject in new object
+      newEmp.age = 25;
+      console.log(newEmp);
+
+    //  document.getElementById('demo').innerHTML = "<ul><li>atul</li></ul>";
+
+
+       let newArry = [11,2,3,'Atul tiwari'];  //    javascript object
+    //    let newArry = new Array (1,2,3,'Hello ndia');   ye new arry object hai 
+       console.log(newArry);
+
+       let newLength = newArry.length          // length mehtod aary ki lenght k liye
+       document.getElementById('demo').innerHTML = newArry[3];
+        // document.getElementById('demo').innerHTML = newLength;
+
+        newArry = newArry.sort(); //  short method fro sort arry 
+        console.log(newArry);
+       
+       newArry = newArry.push('Hello India'); // Push method for add arry 
+       console.log(newArry);
+      
+       let sum = new Array (23);
+       console.log(sum);
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop in java script</title>
+</head>
+
+<body>
+    <script>
+
+        let i = 0;                          // For loop
+        for (i = 0; i < 3; i++) {
+            document.write(i + '<br/>')
+        }
+
+        let Friend = ["Atul Tiwari", 'Vipul Tiwari', "Subham Tiwari", 'Rohit Tiwari'];  // for loop for arry
+        for (let index = 0; index < Friend.length; index++) {
+            const element = Friend[index];
+            console.log('Hello friend' + Friend[index]);
+
+        }
+        document.write(Friend);
+
+
+        Friend.forEach(function f(element) {          // For each method for loop  modren javscript
+            console.log('Hello friend' + element);
+
+        })
+        document.write(Friend);
+
+        for (element of Friend) {                    // morden java script for of  loop 
+            console.log('Hello guru' + element);
+
+        }
+        document.write(Friend);
+
+
+        let Emp = {
+            name: 'Atul Tiwar',
+            Company: " Wipro",
+            location: "Ahemdabad",
+            salary: 1500000                  // use this loop to iterate over object in java script
+        };
+        for (key in Emp) {
+            console.log(`the${key} of employee is ${Emp[key]}`)
+        }
+
+        /////// While Loop ///
+      
+     
+
+    </script>
+</body>
+
+</html>

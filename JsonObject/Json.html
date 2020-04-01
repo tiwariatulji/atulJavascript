@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"></div>
+    <script>
+
+        let jsonObj  ={              // how i send json data convert with stringify and convert string
+            name:"Atul tiwari",
+            village: 'bardah',
+            Dist: 'Azamgarh',
+            freind: 'Subham'
+        }
+        console.log(jsonObj);
+
+        let jsonStr = JSON.stringify(jsonObj); // ek valid java script object ko string me convert karta hai
+        console.log(jsonStr);
+        
+         jsonStr = jsonStr.replace('Subham',"rohit"); // change and replac name in string as string function
+        document.write(jsonStr);
+
+        NewJsonOb = JSON.parse(jsonStr)  // ek valid json string ko json object me convert karta hai.
+        console.log(NewJsonOb);
+
+    </script>
+</body>
+</html>

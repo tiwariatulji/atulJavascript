@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=""></script>
+</head>
+<body>
+    <h1>Hello India</h1>
+
+    <p>Lorem ipsum, dolor sit amet<strong>adipisicing elit</strong> . Odio, dolores? Ut praesentium veniam voluptas laborum fugit quaerat possimus sunt veritatis, eos, pariatur voluptates explicabo culpa nostrum iste ab. Asperiores, deleniti.</p>
+    <hr/>
+
+    <p></p>
+    <label for="car">car</label>
+    <select name='Cars' id="car"  >
+        <option value="bus">Bus </option>
+        <option value="jeep">Jeep </option>
+        <option value="truck" selected>  bmw </option>
+s
+    </select>
+ Gender: 
+    <input type="radio" name="gender">  Female: <input type="radio" name="gender">
+</body>
+
+<div id="content"></div>
+<script>
+    var num = 'Atul';
+    var num2 = 'Atul has a Chanel';
+    var value = `${num} is good Boy ${num2}`;
+    console.log(value);
+
+    var y = new String('this');
+    console.log(y);
+    document.getElementById('content').innerHTML = '<h3>it my Heading is heading <h3/>'
+
+    var str = 'this is string'   ;
+    console.log(str) ;
+    var position = str.indexOf('is');
+    console.log(position); // it is example of index of string method
+
+    var sbstr = str.slice(1,7);
+    console.log (sbstr); // this is slice method instring
+   
+    var sub = str.substring(1,7);
+    console.log(sub); // it is same as slice but slice can be take negative value and its not
+
+     var sub1 = str.substr(1,3);
+     console.log(sub1); //  ye one se start hoga and second parameter lengthbatayega.
+
+      var repalce = str.replace('string', 'Atul');
+       console.log(str);
+       console.log(repalce); // ye string ko change repalce karta hai.
+
+     console.log(str.toUpperCase()); // ye string ko uper case me karti hai.
+     console.log(str.toLowerCase());
+
+     var  newStr = str.concat("hello Atul");
+      console.log(newStr);
+
+
+</script>
+</body>
+</html>
