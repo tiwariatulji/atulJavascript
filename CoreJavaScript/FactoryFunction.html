@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factory Function</title>
+</head>
+<body>
+    <script>
+       
+       function mobile(){
+           return{
+               Modal:"Sumsung",
+               price: function(){
+                   return "price .3000"
+               }
+           };
+       }
+
+  var sumsung = mobile();
+  document.write(sumsung.Modal + "" + sumsung.price());
+
+  // Factory Function with arguments
+       function mobile(Modal_no){
+           return{
+               Modal:Modal_no,
+               price: function(){
+                   return "price .3000"
+               }
+           };
+       }
+
+  var sumsung = mobile("glaxiy");
+  document.write(sumsung.Modal + " " + sumsung.price());
+  // diffrent object
+  var Nokia = mobile("3310");
+  document.write(Nokia.Modal + "  " + Nokia.price());
+      
+      
+
+
+
+
+
+    </script>
+</body>
+</html>

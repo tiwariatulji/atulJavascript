@@ -10,10 +10,22 @@
     <script>
         function disk(name,name2) {
             arguments[0]= "Vipil"
-            document.write(arguments[0])
-            
+            // document.write(arguments[0],arguments[1])
+            document.write(name,name2)
         }
-        disk("atul")
+        disk("atul","Shohan")
+
+
+        // IIFEE function (self invoked function)
+
+         (function(a,b){
+            //  var a = 10
+             document.write(a,b);
+             
+             })(20,30);
+
+             
+
     </script>
 </body>
 </html>

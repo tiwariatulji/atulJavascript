@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Object</title>
+</head>
+<body>
+    <p>Create a Object</p>
+
+    <script>
+        // Object Litarl
+    var school = {};  
+                                        
+      school.Atul = 100;
+      school.Vipul =200                                          
+      // school["Atul"] = 100;
+      // school["Vipul"]= 200;
+      school.total = function(){return(100+200+100);};           // Object method
+      
+      var value  = {             
+          firstname:"Atul",
+          lastname: "Vipul",
+          total: function(){return(200+100)}
+          
+      }
+      document.write(value.total());
+
+  // Object Cunstrutore
+ 
+  const temp = new Object();
+    temp.Rahul= "Mohit";
+    temp.vishal=600;
+    temp.total = function(){return(500+600)}
+
+    document.write(temp["Rahul"])
+  document.write( temp.total())  
+
+  
+// Adding Object Properties and Method in Js. 
+
+    const nav ={
+        ravi:200,
+        mohit:500
+    };
+   
+   nav.show = function(){return};
+   nav.sonam =300;          // add object
+   nav["subham"] = 600,
+   nav["Atul Tiwari"]=600
+
+   delete nav.ravi              // delete object
+
+   
+
+    document.write(nav.ravi)
+    document.write(nav["mohit"])           // squre bracket me double cot k ander name pass karna hoga
+    console.log(nav);
+
+
+
+
+
+
+        
+     
+          
+
+    </script>
+</body>
+</html>
